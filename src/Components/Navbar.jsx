@@ -47,4 +47,5 @@ function typeWriter(elemento) {
       setTimeout(() => elemento.innerHTML += letra, 75 * i);
     });
   } 
+  .
 */
