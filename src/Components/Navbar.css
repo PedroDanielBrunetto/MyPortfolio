@@ -34,13 +34,100 @@ header{
     text-transform: uppercase;
 }
 
+.active a{
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: var(--second-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.active a:hover{
+    color: var(--main-color);
+}
+
 .navbar a:hover{
     color: var(--main-color);
 }
 
-#menu-icon{
+.menu-icon{
     font-size: 24px;
     cursor: pointer;
     z-index: 1001;
     display: none;
+}
+
+@media (max-width: 1150px) {
+    header{
+        padding: 18px 7%;
+    }
+    section{
+        padding: 50px 7%;
+    }
+    .home-text h1{
+        font-size: 3rem; 
+    }
+    .home-text h2{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 991px) {
+    header{
+        padding: 18px 4%;
+    }
+    section{
+        padding: 50px 4%;
+    }
+}
+@media (max-width: 768px) {
+    header{
+        padding: 11px 4%;
+    }
+    .menu-icon{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
+        border-top: 2px solid var(--main-color);
+        text-align: left;
+        transition: 0.3s;
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+        color: var(--second-color);
+        font-weight: 600;
+    }
+    .navbar a:hover{
+        color: var(--main-color);
+    }
+    .active{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
+        border-top: 2px solid var(--main-color);
+        text-align: left;
+        transition: 0.3s;
+    }
+    .active a{
+        padding: 1.5rem;
+        display: block;
+        color: var(--second-color);
+        font-weight: 600;
+    }
+    .active a:hover{
+        color: var(--main-color);
+    }
 }
