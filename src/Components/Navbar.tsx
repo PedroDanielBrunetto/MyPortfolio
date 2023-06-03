@@ -1,9 +1,9 @@
 'use client';
  
-import './Navbar.css'
-import Image from 'next/image'
-import Menu from '../../public/menu.svg'
+import './Navbar.css';
+import Menu from '../../public/menu.svg';
 import { TypeAnimation } from 'react-type-animation';
+import Image from 'next/image';
 
 export default function Navbar() {
     return (
@@ -25,7 +25,7 @@ export default function Navbar() {
                     />
                </h1>
             </div>
-            <Image id="menu-icon" className='w-10' src={Menu}/>
+            <Image id="menu-icon" className='w-10' src={Menu} alt="Menu Icon" />
             <ul className="navbar flex">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre">Sobre mim</a></li>
