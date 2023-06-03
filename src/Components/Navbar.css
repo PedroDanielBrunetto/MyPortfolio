@@ -21,11 +21,6 @@ header{
     color: var(--main-color);
 }
 
-.logo{
-    display: flex;
-    align-items: center
-}
-
 .navbar a{
     font-size: 1rem;
     padding: 11px 20px;
@@ -57,26 +52,20 @@ header{
     display: none;
 }
 
+@media (max-width: 1236px){
+    header{
+        padding: 14px 4%;
+    }
+}
+
 @media (max-width: 1150px) {
     header{
         padding: 18px 7%;
-    }
-    section{
-        padding: 50px 7%;
-    }
-    .home-text h1{
-        font-size: 3rem; 
-    }
-    .home-text h2{
-        font-size: 1.5rem;
     }
 }
 @media (max-width: 991px) {
     header{
         padding: 18px 4%;
-    }
-    section{
-        padding: 50px 4%;
     }
 }
 @media (max-width: 768px) {
@@ -129,5 +118,11 @@ header{
     }
     .active a:hover{
         color: var(--main-color);
+    }
+    .xC{
+        display:none;
+    }
+    .xO{
+        display: initial;
     }
 }

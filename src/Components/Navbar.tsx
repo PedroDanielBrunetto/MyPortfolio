@@ -2,9 +2,10 @@
  
 import './Navbar.css';
 import Menu from '../../public/menu.svg';
+import x from '../../public/x.svg';
 import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image';
-import { useState, useRef } from 'react';// Gerenciar o estado de algum valor
+import { useState, useRef } from 'react';// useState = gerenciar o estado de algum valor
 
 export default function Navbar() {
     const dropDownRef = useRef(null);
@@ -32,8 +33,9 @@ export default function Navbar() {
                     />
                </h1>
             </div>
-            <button onClick={onClick}>
-                <Image className='menu-icon w-10' src={Menu} alt="Menu Icon" />
+            <button onClick={onClick} >
+                <Image className={`menu-icon w-10 ${isActive ? "xC" : "xO"}`} src={Menu} alt="Menu Icon" />
+                <Image className={`menu-icon w-10 ${isActive ? "xO" : "xC"}`} src={x} alt="X Icon" />
             </button>
             <ul ref={dropDownRef} className={`flex ${isActive ? "active" : "navbar"}`}>
                 <li><a href="#inicio">Inicio</a></li>
