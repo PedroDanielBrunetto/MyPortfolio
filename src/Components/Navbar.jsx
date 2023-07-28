@@ -38,12 +38,12 @@ export default function Navbar() {
                 <Image className={`menu-icon w-10 ${isActive ? "xO" : "xC"}`} src={x} alt="X Icon" />
             </button>
             <ul ref={dropDownRef} className={`flex ${isActive ? "active" : "navbar"}`}>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#curriculo">Curriculo</a></li>
+                <li><a href="#inicio" onClick={onClick} className={` ${isActive ? "xC" : "xO"}`}>Inicio</a></li>
+                <li><a href="#sobre" onClick={onClick} className={` ${isActive ? "xC" : "xO"}`}>Sobre mim</a></li>
+                <li><a href="#habilidades" onClick={onClick} className={`  ${isActive ? "xC" : "xO"}`}>Habilidades</a></li>
+                <li><a href="#projetos" onClick={onClick} className={`  ${isActive ? "xC" : "xO"}`}>Projetos</a></li>
+                <li><a href="#contato" onClick={onClick} className={`  ${isActive ? "xC" : "xO"}`}>Contato</a></li>
+                <li><a href="../../public/curriculo_PedroDanielBrunetto.pdf" type="application/pdf" download="curriculo_PedroDanielBrunetto.pdf" onClick={onClick} className={`  ${isActive ? "xC" : "xO"}`}>Curriculo</a></li>
             </ul>
         </header>
     )
