@@ -1,3 +1,5 @@
+'use client'
+
 import eu from '../img/eu.jpg'
 import Image from 'next/image'
 import Navbar from '../Components/Navbar.jsx'
