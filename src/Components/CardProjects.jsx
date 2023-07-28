@@ -14,10 +14,10 @@ export default function CardProjects(props){
           <p className="text-base text-[#ebdbc8]">
             Tecnologias usadas:
           </p>
-          <Image src={props.tecnologias} alt="Tecnologies" className="w-6 md:w-6 md:h-6"/>
-          <Image src={props.tecnologias2} alt="Tecnologies" className="w-6 md:w-6 md:h-6"/>
-          <Image src={props.tecnologias3} alt="Tecnologies" className="w-6 md:w-6 md:h-6"/>
-          <Image src={props.tecnologias4} alt="Tecnologies" className="w-6 md:w-6 md:h-6 "/>
+          <Image src={props.tecnologias} alt="Tecnologies" className="w-6 h-6 md:w-6 md:h-6"/>
+          <Image src={props.tecnologias2} alt="Tecnologies" className="w-6 h-6 md:w-6 md:h-6"/>
+          <Image src={props.tecnologias3} alt="Tecnologies" className="w-6 h-6 md:w-6 md:h-6"/>
+          <Image src={props.tecnologias4} alt="Tecnologies" className="w-6 h-6 md:w-6 md:h-6 "/>
         </div>
         <a href={props.url} className="text-base text-[#ebdbc8] flex justify-center items-center gap-4">
         Veja mais: <GitBranch size={32} color="#00adc2"/>
