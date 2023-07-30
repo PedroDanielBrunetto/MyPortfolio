@@ -1,13 +1,14 @@
 module.exports = {
   mode: 'jit',
-  purge: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/*/.jsx',
-    './src/*/.js',
-    '.src/components/CardProjects/CardProjects.jsx'
-  ],
+//  purge: [
+//    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+//    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+//    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+//  ],
+content:[
+  './src/**/*.jsx',
+  './src/**/*.js',
+],
   theme: {
     extend: {
       backgroundImage: {
