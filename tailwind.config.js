@@ -4,6 +4,9 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/*/.jsx',
+    './src/*/.js',
+    '.src/components/CardProjects/CardProjects.jsx'
   ],
   theme: {
     extend: {
