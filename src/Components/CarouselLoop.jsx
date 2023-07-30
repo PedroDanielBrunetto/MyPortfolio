@@ -1,4 +1,4 @@
-import './CarouselLoop.module.css'
+import './CarouselLoop.css'
 
 import insomnia from '../img/skillsIcons/apps-insomnia.svg'
 import express from '../img/skillsIcons/express.svg'
