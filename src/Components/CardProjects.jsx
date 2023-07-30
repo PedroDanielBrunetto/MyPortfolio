@@ -20,7 +20,7 @@ export default function CardProjects(props){
           <Image src={props.tecnologias4} alt="Tecnologies" className="w-6 md:w-6 md:h-6 "/>
         </div>
         <a href={props.url} className="flex justify-center items-center text-base text-[#ebdbc8] gap-4">
-        Veja mais: <GitBranch size={32} color="#00adc2"/>
+          Veja mais: <GitBranch size={32} color="#00adc2"/>
         </a>
       </div>
     </div>

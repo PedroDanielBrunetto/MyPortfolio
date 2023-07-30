@@ -1,14 +1,15 @@
 'use client'
 
-import eu from '../img/eu.jpg'
 import Image from 'next/image'
 import Navbar from '../Components/Navbar.jsx'
+import CarouselLoop from '../Components/CarouselLoop.jsx'
+import CardProjects from '../Components/CardProjects.jsx'
+
+import eu from '../img/eu.jpg'
 import git from '../img/github-logo.svg'
 import email from '../img/microsoft-outlook-logo.svg'
 import wpp from '../img/chats.svg'
 import unisantos from '../img/WhatsApp Image 2023-07-27 at 20.40.58.jpeg'
-import CarouselLoop from '../Components/CarouselLoop.jsx'
-import CardProjects from '../Components/CardProjects.jsx'
 import escolaSantos from '../img/Vectary texture.svg'
 import CRUD from '../img/Vectary texture (1).svg'
 import CaoAmigo from '../img/Vectary texture (2).svg'
@@ -26,7 +27,6 @@ import { LinkedinLogo, Phone, Chats, DiscordLogo, Copyright, InstagramLogo, File
 
 
 export default function Home() {
-
 
   return (
     <main className="m-0 p-0 box-border scroll-pt-8 list-none scroll-smooth flex flex-col">
