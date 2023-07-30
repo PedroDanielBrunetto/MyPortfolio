@@ -1,6 +1,6 @@
 'use client';
  
-import './Navbar.css';
+import './Navbar.module.css';
 import Menu from '../../public/menu.svg';
 import x from '../../public/x.svg';
 import { TypeAnimation } from 'react-type-animation';

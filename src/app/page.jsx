@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Navbar from '../Components/Navbar.jsx'
 import CarouselLoop from '../Components/CarouselLoop.jsx'
-import CardProjects from '../Components/CardProjects.jsx'
+import CardProjects from '../Components/CardProjects/CardProjects.jsx'
 
 import eu from '../img/eu.jpg'
 import git from '../img/github-logo.svg'

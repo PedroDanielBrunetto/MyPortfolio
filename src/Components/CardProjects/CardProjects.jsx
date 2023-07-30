@@ -26,7 +26,7 @@ export default function CardProjects(props){
             <Image src={props.tecnologias3} alt="Tecnologies" />
           </div>
           <div className="w-6 md:w-6 md:h-6">
-            <Image src={props.tecnologias4} alt="Tecnologies" className="w-6"/>
+            <Image src={props.tecnologias4} alt="Tecnologies"/>
           </div>
         </div>
         <a href={props.url} className="flex justify-center items-center text-base text-[#ebdbc8] gap-4">
