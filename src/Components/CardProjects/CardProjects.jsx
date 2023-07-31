@@ -3,13 +3,13 @@ import { GitBranch } from 'phosphor-react'
 
 export default function CardProjects(props){
   return(
-    <div className="flex flex-col justify-between bg-[#1e3932] rounded-lg w-4/12 items-center p-4 gap-3 max-h-[500px] md:flex md:flex-col md:h-auto md:w-full">
-      <div className="-mt-">
+    <div className="flex flex-col justify-between bg-[#1e3932] rounded-lg w-4/12 items-center p-4 gap-3 max-h-[600px] md:flex md:flex-col md:h-auto md:w-full">
+      <div className="-mt-4">
         <Image src={props.imagem} alt="Project" />
       </div>
       <div className="flex flex-col gap-5 -mt-10">
         <h1 className="text-2xl text-[#ebdbc8] text-center">{props.nome}</h1>
-        <p className="text-center text-lg text-[#ebdbc8]">
+        <p className="text-center text-lg text-[#ebdbc8] md:text-base">
           {props.about}
         </p>
         <div className="flex justify-center gap-2 md:gap-1">
