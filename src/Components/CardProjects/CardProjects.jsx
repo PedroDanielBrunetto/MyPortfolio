@@ -3,8 +3,8 @@ import { GitBranch } from 'phosphor-react'
 
 export default function CardProjects(props){
   return(
-    <div className="flex flex-col justify-between bg-[#1e3932] rounded-lg w-4/12 items-center p-4 gap-3 h-[700px] md:flex md:flex-col md:h-auto md:w-full">
-      <div className="-mt-36">
+    <div className="flex flex-col justify-between bg-[#1e3932] rounded-lg w-4/12 items-center p-4 gap-3 max-h-[500px] md:flex md:flex-col md:h-auto md:w-full">
+      <div className="-mt-">
         <Image src={props.imagem} alt="Project" />
       </div>
       <div className="flex flex-col gap-5 -mt-10">
