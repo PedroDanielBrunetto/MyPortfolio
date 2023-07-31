@@ -7,7 +7,7 @@ export default function CardProjects(props){
       <div className={`-mt-40 md:-mt-32 ${props.martop} `}>
         <Image src={props.imagem} alt="Project" />
       </div>
-      <div className={`flex flex-col gap-5 ${props.marbor} `}>
+      <div className={`flex flex-col gap-5 ${props.marbor} ${props.martoprespon}`}>
         <h1 className="text-2xl text-[#ebdbc8] text-center">{props.nome}</h1>
         <p className="text-center text-lg text-[#ebdbc8]">
           {props.about}
