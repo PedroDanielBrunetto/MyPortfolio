@@ -5,13 +5,13 @@ import Navbar from '../Components/Navbar.jsx'
 import CarouselLoop from '../Components/CarouselLoop.jsx'
 import CardProjects from '../Components/CardProjects/CardProjects.jsx'
 
-import eu from '../img/eu.jpg'
+import eu from '../img/euarrumado.jpg'
 import git from '../img/github-logo.svg'
 import email from '../img/microsoft-outlook-logo.svg'
 import wpp from '../img/chats.svg'
 import unisantos from '../img/WhatsApp Image 2023-07-27 at 20.40.58.jpeg'
 import escolaSantos from '../img/Vectary texture.svg'
-import CRUD from '../img/Vectary texture (1).svg'
+import CRUD from '../img/image 1.png'
 import CaoAmigo from '../img/Vectary texture (2).svg'
 import vite from '../img/skillsIcons/vite-icon.png'
 import react from '../img/skillsIcons/icons8-react-js-80.png'
@@ -91,7 +91,7 @@ export default function Home() {
         </div>
         <div className="flex justify-between gap-6  md:flex-col md:gap-40">
           <CardProjects nome="Quiz App - Escola Santos" imagem={escolaSantos} url="https://github.com/PedroDanielBrunetto/FirstMobile-QuizApp" tecnologias={js} tecnologias2={react} tecnologias3={vite} tecnologias4={tailwind} about="Um website mobile desenvolvido com React para o curso de Programação Mobile na Etec Dra. Ruth Cardoso. Ele proporciona uma experiência otimizada para usuários de dispositivos móveis, contando com uma interface intuitiva e uma navegação fluida."/>
-          <CardProjects nome="CRUD - Gestão de Cursos" imagem={CRUD} url="https://github.com/PedroDanielBrunetto/CoursesManagementCRUD" tecnologias={php} tecnologias2={mysql} tecnologias3={css} tecnologias4={js} about="Projeto desenvolvido em PHP, utilizando MySQL em conjunto com o phpMyAdmin, para praticar operações CRUD. O site está apenas disponível para Desktop."/>
+          <CardProjects size="w-" nome="CRUD - Gestão de Cursos" imagem={CRUD} url="https://github.com/PedroDanielBrunetto/CoursesManagementCRUD" tecnologias={php} tecnologias2={mysql} tecnologias3={css} tecnologias4={js} about="Projeto desenvolvido em PHP, utilizando MySQL em conjunto com o phpMyAdmin, para praticar operações CRUD. O site está apenas disponível para Desktop."/>
           <CardProjects nome="Sistema De Agendamento PetShop - Cão Amigo" imagem={CaoAmigo} url="https://github.com/PedroDanielBrunetto/PetShopSchedulingSystem" tecnologias={csharp} tecnologias2={dotnet} tecnologias3={mysql} tecnologias4={guna} about="O projeto é um software baseado em Windows Forms, desenvolvido em C# e utilizando a estrutura .NET. Projetado como uma ferramenta de estudo, ele se concentra na criação de um Software de Gestão para PetShop. Esta aplicação permite que o pet shop registre clientes, armazene detalhes dos animais e gerencie consultas de forma eficiente."/>
         </div>
       </section>
