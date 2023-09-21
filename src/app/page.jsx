@@ -5,6 +5,7 @@ import Navbar from '../Components/Navbar.jsx'
 import CarouselLoop from '../Components/CarouselLoop.jsx'
 import CardProjects from '../Components/CardProjects/CardProjects.jsx'
 
+import Marimex from '../img/marimex.jpg'
 import eu from '../img/euarrumado.jpg'
 import git from '../img/github-logo.svg'
 import email from '../img/microsoft-outlook-logo.svg'
@@ -24,9 +25,10 @@ import js from '../img/skillsIcons/icons8-javascript-96.png'
 import css from '../img/skillsIcons/icons8-css3-96.png'
 import guna from '../img/skillsIcons/gunaui.png'
 import { LinkedinLogo, Phone, Chats, DiscordLogo, Copyright, InstagramLogo, FileArrowDown } from 'phosphor-react'
-
+import { useState } from 'react'
 
 export default function Home() {
+  const [showFullContent, setShowFullContent] = useState(false);
 
   return (
     <main className="m-0 p-0 box-border scroll-pt-8 list-none scroll-smooth flex flex-col">
@@ -72,6 +74,29 @@ export default function Home() {
             Sou um estudante de 18 anos, atualmente cursando Técnico de Desenvolvimento de Sistemas na Etec Dra. Ruth Cardoso e graduando em Análise e Desenvolvimento de Sistemas na Universidade Católica de Santos.<br/>Possuo habilidades sólidas em desenvolvimento de software, tanto para web quanto para aplicativos, utilizando diversas linguagens de programação e frameworks.
           </p>
       </section>
+        <h1 className="text-3xl text-[--main-color] text-center">
+          Experiências profissionais
+        </h1>
+        <section id="Experiência" className="flex w-full justify-around items-center md:flex-col">
+          <div className='flex flex-col'>
+            <Image src={Marimex} alt="Pedro Daniel" className="w-96"/>
+          </div>
+          <p className="w-4/12 p-1 text-[--second-color] text-lg md:pt-9 md:w-full">
+            Atualmente, ocupo a posição de Aprendiz de TI na Marimex, uma empresa renomada no setor portuário. Como parte integrante da equipe de desenvolvimento, tenho a oportunidade de contribuir para a melhoria contínua dos nossos softwares e participar ativamente de diversos projetos.<br/>
+
+            No meu dia a dia, trabalho predominantemente com o .NET Framework. No front-end, utilizo ASP .NET MVC, enquanto no back-end, crio Web APIs também com ASP .NET. Além disso, faço uso frequente do SQL Server para analisar e corrigir procedures e views, bem como para praticar diversos tipos de queries.<br/>
+
+            {showFullContent ? (
+              <>
+                Embora a maior parte do meu trabalho envolva as tecnologias mencionadas acima, também tenho experiência com Web Forms em aplicações legadas e estou atualmente envolvido em um novo projeto que utiliza React.JS.<br/>
+                Essa diversidade de experiências e habilidades me permite ser um profissional versátil e adaptável, sempre pronto para enfrentar novos desafios e aprender novas tecnologias. Estou ansioso para continuar crescendo e evoluindo na minha carreira em TI.<br/>
+              </>
+            ) : (
+              <button onClick={() => setShowFullContent(true)} ><p className='text-gray-500 underline'>Ver mais...</p></button>
+            )}
+          </p>
+        </section>
+
       <section id="habilidades" className="flex flex-col text-center ">
         <h1 className="text-3xl text-[--main-color]">
           Tecnologias que eu utilizo e estudo:
