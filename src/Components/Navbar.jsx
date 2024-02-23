@@ -43,7 +43,7 @@ export default function Navbar() {
                 <li><a href="#habilidades" onClick={onClick} className={`  ${isActive ? "xC" : "xO"}`}>Habilidades</a></li>
                 <li><a href="#projetos" onClick={onClick} className={`  ${isActive ? "xC" : "xO"}`}>Projetos</a></li>
                 <li><a href="#contato" onClick={onClick} className={`  ${isActive ? "xC" : "xO"}`}>Contato</a></li>
-                <li><a href="../../public/curriculo_PedroDanielBrunetto.pdf" type="application/pdf" download="curriculo_PedroDanielBrunetto.pdf" onClick={onClick} className={`  ${isActive ? "xC" : "xO"}`}>Curriculo</a></li>
+                <li><a href="https://github.com/PedroDanielBrunetto/Curriculo" onClick={onClick} className={`  ${isActive ? "xC" : "xO"}`}>Curriculo</a></li>
             </ul>
         </header>
     )
